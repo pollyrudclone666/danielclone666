@@ -9,10 +9,11 @@
 
             let x = 33;
             let s = 'яблоки';
-            let if = '17';
+            // let if = '17';
 
             console.log('x='', x, 's=' s);
         </script>
+        <script scr="'lab6.js"></script>
     <style>
         body{
             margin: 0;
@@ -26,6 +27,11 @@
             height: 80px
             line-height: 80px;
             padding-left: 30px;
+        }
+        .header .language{
+            position: absolute;
+            right: 30px;
+            top: 0;
         }
         .footer {
             color: #888;
@@ -46,7 +52,11 @@
     <body>
  
         <div class="header">
-            Феденев Руднева
+            <div id="student"> Феденев Э.Д.И., Руднева П.О. </div> 
+            <div class="language">
+                <input type="button" value="ru" onclick="setrussian()" >
+                <input type="button" value="eng" onclick="setenglish()" >
+            </div>
         </div>
         <div class="content">
             <form>
@@ -58,7 +68,7 @@
                         <span> Ваша фамилия</span>: <input type="text">
                     </div>
                     <div>
-                        <span> Вашш возраст</span>: <input type="text">
+                        <span> Ваш возраст</span>: <input type="text">
                     </div>
                     <div>
                         <input type="button" value="ок">
@@ -68,7 +78,8 @@
             </form>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="footer" >
+            Факультет бизнеса, ФБИ-03, 3 курс 2022
 
         </div>
     </body>    
