@@ -62,17 +62,17 @@
             <form>
                 <div>
                     <div>
-                        <span> Ваше имя</span>: <input type="text">
+                        <span id="your-name">Ваше имя: <input type="text" id="input-name" placeholder="Введите имя">
                     </div>
                     <div>
-                        <span> Ваша фамилия</span>: <input type="text">
+                        <span id="your-surname"> Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="Введите фамилию">
                     </div>
                     <div>
-                        <span> Ваш возраст</span>: <input type="text">
+                        <span id="your-age"> Ваш возраст</span>: <input type="text" id="input-age" placeholder="Введите возраст">
                     </div>
                     <div>
-                        <input type="button" value="ок">
-                        <input type="button" value="сброс">
+                        <input type="button" value="ок" id="ok-button" onclick="showalert()" >
+                        <input type="button" value="сброс" id="reset-button" >
                     </div>
                 </div>
             </form>
