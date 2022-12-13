@@ -2,11 +2,12 @@ function showAlert() {
     let userName = document.getElementById('input-name').value;
     let userSurname = document.getElementById('input-surname').value;
     let userAge = document.getElementById('input-age').value;
+    let userSex = document.getElementById('sex').value;
 
     let greeting;
-    if( userage <= 17) {
+    if(userAge <= 17) {
         greeting = "Здравствуй, ";
-        if(usersex == 'female') {
+        if(userSex == 'female') {
             greeting += 'девочка';
         }
         else {
@@ -14,12 +15,12 @@ function showAlert() {
         }
     }
     else { 
-        greeting = "Здравствуйте, "
-        if(usersex == 'female') {
-            greeting += 'госпожа '
+        greeting = "Здравствуйте, ";
+        if(userSex == 'female') {
+            greeting += 'госпожа ';
         }
-        Else {
-            greeting += 'господин '
+        else {
+            greeting += 'господин ';
         }
     }
     alert( greeting + userName + ' ' + userSurname + '\n' 
