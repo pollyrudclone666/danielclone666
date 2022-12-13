@@ -3,84 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title> Феденев Э.Д.И. Руднева П.О. ФБИ-03. Лабораторная работа 6</title>
-        <link rel="styleheet" href="lab6.css" type="text/css">
+        <link rel="stylesheet" href="lab6.css" type="text/css">
         <script>
             console.log('Всем привет!!!');
 
             let x = 33;
             let s = 'яблоки';
-            // let if = '17';
-
-            console.log('x='', x, 's=' s);
+            // let if = 17;
+            console.log('x=', x, 's=', s);
         </script>
-        <script scr="'lab6.js"></script>
-    <style>
-        body{
-            margin: 0;
-            font-family: arial, helvetica, sans-serif;
-            background-color: lightpink; 
-        }
-        .header{
-            color: white;
-            background: lightpink;
-            font-size: 20px;
-            height: 80px
-            line-height: 80px;
-            padding-left: 30px;
-        }
-        .header .language{
-            position: absolute;
-            right: 30px;
-            top: 0;
-        }
-        .footer {
-            color: #888;
-            font-size: 14px;
-            font-size: italic;
-            background-color: lightpink;
-            text-align: right;
-            height: 30px;
-            line-height: 30px;
-            padding-right: 20px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-    </style>
+        <script src="lab6.js"></script>
     </head>
     <body>
- 
         <div class="header">
-            <div id="student"> Феденев Э.Д.И., Руднева П.О. </div> 
+            <div id="student">Феденев Даниэль, Полина Руднева</div>
             <div class="language">
-                <input type="button" value="ru" onclick="setrussian()" >
-                <input type="button" value="eng" onclick="setenglish()" >
+                <input type="button" value="ru" onclick="setRussian()">
+                <input type="button" value="en" onclick="setEnglish()">
             </div>
         </div>
+
         <div class="content">
             <form>
-                <div>
+                <div id="user-data">
                     <div>
-                        <span id="your-name">Ваше имя: <input type="text" id="input-name" placeholder="Введите имя">
+                        <span id="your-name">Ваше имя</span>:<input type="text" id="input-name" placeholder="Введите имя">
                     </div>
                     <div>
-                        <span id="your-surname"> Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="Введите фамилию">
+                        <span id="your-surname">Ваша фамилия</span>:<input type="text" id="input-surname" placeholder="Введите фамилию">
                     </div>
                     <div>
-                        <span id="your-age"> Ваш возраст</span>: <input type="text" id="input-age" placeholder="Введите возраст">
+                        <span id="your-age">Ваш возраст</span>:<input type="number" id="input-age" placeholder="Введите возраст">
                     </div>
                     <div>
-                        <input type="button" value="ок" id="ok-button" onclick="showalert()" >
-                        <input type="button" value="сброс" id="reset-button" >
+                        <input type="button" value="ОК" id="ok-button" onclick="showAlert()">
+                        <input type="reset" value="Сброс" id="reset-button">
                     </div>
                 </div>
             </form>
         </div>
 
-        <div class="footer" id="footer" >
-            Факультет бизнеса, ФБИ-03, 3 курс 2022
-
+        <div class="footer" id="footer">
+            Факультет бизнеса, ФБИ-03, 3 курс, 2022
         </div>
-    </body>    
+    </body>
 </html>
