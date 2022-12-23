@@ -8,7 +8,7 @@ function showAlert() {
     if(userAge <= 17) {
         greeting = "Здравствуй, ";
         if(userSex == 'female') {
-            greeting += 'девочка';
+            greeting += 'девочка ';
         }
         else {
             greeting += 'мальчик ';

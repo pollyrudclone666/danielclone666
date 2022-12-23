@@ -33,5 +33,15 @@ body{
     position: absolute;
     top: 300px;
     left: 30px;
-
 }
+    h1 {
+        font-size: 30px ;
+        text-align: center;
+    }
+    p {
+        width: 450px;
+        margin: 18px auto;
+        text-align: center;
+        
+    
+    }
