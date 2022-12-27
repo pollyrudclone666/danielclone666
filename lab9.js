@@ -21,3 +21,16 @@ function surname2(button) {
         button.innerHTML = 'Руднева';
 
 }
+
+function more(button) {
+    if(button.innerHTML == 'Нажми меня')
+        button.innerHTML = 'Еще раз нажми';
+    else
+        if (button.innerHTML == 'Еще раз нажми')
+            button.innerHTML = 'Еще';
+        else
+            if(button.innerHTML == 'Еще')
+                button.innerHTML = 'Начать сначала';
+            else 
+                button.innerHTML = 'Нажми меня';         
+}
